@@ -1,67 +1,18 @@
-# Coffee Shop By Tailwind
 
+## Installation
 
+Install my-project with npm
 
+```bash
+  npm run build
+  
+```
 
-<p>This is first project with tailwind!</p>
+## 🛠 Skills
 
-
-___
-
-## Code
-
-
- inline `code`
-
- ```json
- {
-        'firstName': 'Meysam',
-        'lastName': 'Khorshidi',
-        'job': 'Front-End Developer'
- }
-
- ```
-
- ____
-
- ## Default Dark Mode
-
- ```javascript
- {
-       const toggleThemeBtn = document.querySelector("#toggle-theme");
-       toggleThemeBtn.addEventListener("click" , () => {
-          if (localStorage.theme === "dark"){
-              document.documentElement.classList.remove("dark");
-              localStorage.theme = "light";
-          } else {
-             document.documentElement.classList.add("dark");
-             localStorage.setItem("theme" , "dark");
-         }
-       })
- }
-
- ```
-
- ____
-
- ## Lists : 
-
- 1. javascript
- 2. HTML
- 3. CSS
- 4. Tailwind
-
- ____
-
-
- ### project Link
-
- [Meysam Git Course](https://github.com/MeysamKhorshidi/test-coffeshop)
-
- ____
-
- ## Images
-
-![Minion](https://octodex.github.com/images/minion.png)
+![](	https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![](	https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
 
