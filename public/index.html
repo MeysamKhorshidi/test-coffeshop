@@ -94,7 +94,7 @@
                                
         </svg>
 
-
+        <!--  App Header -->
      <header class="fixed top-9 right-0 left-0 hidden md:flex items-center w-[98%] lg:w-[90%] h-24 px-5 lg:px-10 py-5 bg-black/50 rounded-3xl mx-auto backdrop-blur-[6px] ">
         <div class="flex justify-between items-center w-full">
          <!-- Logo & Menu -->
@@ -236,14 +236,14 @@
 
      <div class="flex md:hidden  items-center justify-between px-4 h-16 bg-white dark:bg-zinc-700 ">
          <!-- Nav Icons -->
-        <div>
+        <div class="nav-icon">
                 <svg class="w-6 h-6 text-zinc-700 dark:text-white">
                         <use href="#bars-3"></use>
                 </svg>
         </div>
 
         <!-- Nav -->
-        <div class="fixed top-0 bottom-0 right-0 pt-3 px-4 md:hidden bg-white dark:bg-zinc-700 w-64 min-h-screen z-20">
+        <div class="nav fixed w-64 top-0 bottom-0 -right-64 pt-3 px-4 md:hidden bg-white dark:bg-zinc-700  min-h-screen overflow-y-auto z-20 transition-all">
                   <!-- Nav Header -->
                 <div class="flex items-center justify-between pb-5 mb-6 border-b border-b-gray-100 dark:border-b-white/10">
                         <div class="flex gap-x-3.5 ">
@@ -257,9 +257,12 @@
                                 
                         </div>
                        
-                                <svg class="w-5 h-5 text-zink-600 dark:text-white">
+                        <div class="nav-close-btn">
+                                <svg class=" w-5 h-5 text-zink-600 dark:text-white">
                                         <use href="#x-mark"></use>
                                 </svg>
+                        </div>
+                               
                        
 
                 </div>
@@ -299,7 +302,7 @@
                                                         </span>
                                               </div>
                                                       
-                                                <div class="submenu flex flex-col gap-y-3 pr-7 mt-3 text-sm text-zinc-600 dark:text-white">
+                                                <div class="submenu">
                                                         <a href="#">قهوه ویژه</a>
                                                         <a href="#" class="submenu__item--active">ویژه در سطح جهانی</a>
                                                         <a href="#">قهوه درجه یک</a>
@@ -352,7 +355,7 @@
                 </div>
 
                   <!-- Nav Footer -->
-                <div class="flex flex-col items-start gap-y-6 px-2.5 pt-8 mt-8 text-orange-300 border-t border-b-gray-100 dark:border-b-white/10">
+                <div class="flex flex-col items-start gap-y-6 px-2.5 py-8 mt-8 text-orange-300 border-t border-b-gray-100 dark:border-b-white/10">
                         <a href="#" class="inline-flex items-center gap-x-2">
                                 <svg class="w-5 h-5 rotate-180">
                                         <use href="#arrow-left-on-rectangle"></use>
@@ -386,16 +389,98 @@
                 </svg>
         </div>
           <!-- Card Icons -->
-        <div>
+        <div class="cart-icon">
                 <svg class="w-6 h-6 text-zinc-700 dark:text-white">
                         <use href="#shopping-cart"></use>
                 </svg>
         </div>
+
+         <!-- Card Icons Box -->
+
+         <div class="cart fixed w-64 top-0 bottom-0 -left-64 flex flex-col pt-5 px-4 md:hidden bg-white dark:bg-zinc-700 min-h-screen overflow-y-auto z-20 transition-all">
+                  <!-- Card  Header -->
+                <div class="flex items-center justify-between border-b border-b-gray-100 dark:border-b-white/10 mb-5   pb-5">
+                        <div class="cart-close-btn">
+                                <svg class="w-5 h-5 text-zinc-600 dark:text-white">
+                                        <use href="#x-mark"></use>
+                                </svg>
+                        </div>
+                       <span class="font-DanaMedium text-zinc-700 dark:text-white">سبد خرید</span>
+                </div>
+                  <!-- Card  body -->
+                  <div class="child:pb-5 child:mb-5">
+                        <div class="flex gap-x-1 border-b border-b-gray-100 dark:border-b-white/10">
+                      
+                                <img class="w-[90px] h-[90px]" src="images/products/p3.png" alt="products">
+                      
+                        <div class="flex flex-col justify-between gap-y-1.5">
+                                <h4 class="font-DanaMedium text-sm text-zinc-700 dark:text-white line-clamp-2">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                                <span class="font-DanaMedium flex text-teal-600 dark:text-emerald-500 text-xs tracking-tighter">
+                                        145,000 تومان تخفیف
+                                </span>
+                                <div class="text-zinc-700 dark:text-white font-DanaDemiBold">
+                                        175,000
+                                        <span class="font-Dana text-xs">تومان تخفیف</span>
+                                </div>
+                        </div>
+                        </div>
+                       <div class="flex gap-x-1">
+                      
+                                <img class="w-[90px] h-[90px]" src="images/products/p3.png" alt="products">
+                      
+                        <div class="flex flex-col justify-between gap-y-1.5">
+                                <h4 class="font-DanaMedium text-sm text-zinc-700 dark:text-white line-clamp-2">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                                <span class="font-DanaMedium flex text-teal-600 dark:text-emerald-500 text-xs tracking-tighter">
+                                        145,000 تومان تخفیف
+                                </span>
+                                <div class="text-zinc-700 dark:text-white font-DanaDemiBold">
+                                        175,000
+                                        <span class="font-Dana text-xs">تومان تخفیف</span>
+                                </div>
+                        </div>
+                        </div>
+
+                  </div>
+                  <!-- Card  Footer -->
+                  <div class="flex items-end gap-x-4 mt-auto mb-8">
+                        <div>
+
+                                <a href="#" class="flex items-center justify-center w-28 h-11 text-white bg-teal-600 dark:bg-emerald-500 rounded-xl">ثبت سفارش</a>
+                        </div>
+                        <div>
+                                <span class="font-DanaMedium text-gray-300 text-xs tracking-tighter">مبلغ قابل پرداخت</span>
+                                <div class="text-zinc-700 dark:text-white font-DanaDemiBold">
+                                        350,000
+                                        <span  class="font-Dana text-xs">تومان</span>
+                                </div>
+                        </div>
+                        
+                    </div>
+
+
+         </div>
         
      </div>
 
+        <!--  App Menu -->      
+        <main>
+                <section class="home h-[200px] xs:h-auto xs:aspect-[2/1] md:aspect-auto bg-home-mobile md:bg-home-desktop bg-no-repeat bg-cover bg-[center_top]">
+                        <div class="container flex items-center justify-end md:min-h-screen h-full">
+                                <div class="text-white">
+                                        <h2 class="font-MorabbaBold  tetx-2xl md:text-6xl mb-0.5 md:mb-2">قهوه عربیکا تانزانیا</h2>
+                                        <span class="font-MorabbaLight text-xl md:text-5xl">یک فنجان بالانس !</span>
+                                        <span class="block bg-orange-300 w-[100px] h-px md:h-0.5 my-3 md:my-8"></span>
+                                        <p class="md:text-2xl text-xs md:max-w-[460px] max-w-[201px]">قطعا نام آشنای عربیکا را شنیده اید، عربیکا یکی از گونه های قهوه است که در نواحی مختلف کمربند قهوه کشت میشود.</p>
+                                </div>
+                        </div>
+                </section>
+        </main>
 
-<div class="overlay md:hidden fixed inset-0 w-full h-full bg-black/40 z-10"></div>
+
+
+
+
+<div class="overlay"></div>
   <script src="./scripts/app.js"></script>      
 </body>
 </html>

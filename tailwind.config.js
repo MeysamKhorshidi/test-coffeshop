@@ -1,42 +1,69 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./public/**/*.{html,js}"],
-  darkMode:'class',
+  darkMode: 'class',
   theme: {
     extend: {
-      colors : {
-        "brown" : {
+      colors: {
+        "brown": {
           100: "#ECE0D1",
-          300:"#9CA3AF",
-          600:"#967259",
-          900:"#634832"
+          300: "#9CA3AF",
+          600: "#967259",
+          900: "#634832"
         }
       },
       boxShadow: {
-        "normal" : "0px 1px 10px rgba(0,0,0,0.05)"
-        
+        "normal": "0px 1px 10px rgba(0,0,0,0.05)"
+
       },
-      borderRadius:{
-        "4xl":  "2rem"
+      borderRadius: {
+        "4xl": "2rem"
       },
       fontFamily: {
-        "Dana" : "Dana",
-        "DanaMedium" : "Dana Medium",
-        "DanaDemiBold" : "Dana DemiBold",
-        "MorabbaMedium" : "Morabba Medium",
-        "MorabbaLight" : "Morabba Light",
-        "MorabbaBold" : "Morabba Bold",
+        "Dana": "Dana",
+        "DanaMedium": "Dana Medium",
+        "DanaDemiBold": "Dana DemiBold",
+        "MorabbaMedium": "Morabba Medium",
+        "MorabbaLight": "Morabba Light",
+        "MorabbaBold": "Morabba Bold",
       },
       letterSpacing: {
-        "tightest" : "-0.065em"
+        "tightest": "-0.065em"
       },
       spacing: {
-        "30" :" 7.5rem"
+        "30": " 7.5rem"
+      },
+       container: {
+        center: true,
+        padding:{
+          DEFAULT:"1rem",
+          lg:".625rem"
+        }
+      },
+      backgroundImage:{
+        "home-mobile":"url(./images/headerBgMobile.webp)",
+        "home-desktop":"url(./images/headerBgDesktop.png)",
       }
     },
+    screens: {
+      'xs' : '480px',
+       // => @media (min-width: 480px) { ... }
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+    },
+   
   },
   plugins: [
-    function ({addVariant}){
+    function ({ addVariant }) {
       addVariant('child', '& > *');
       addVariant('child-hover', '& > *:hover')
     }
