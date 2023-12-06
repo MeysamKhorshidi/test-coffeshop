@@ -128,6 +128,28 @@
 
 
         }
+        
+        .category-banner__item1{
+            
+                background: linear-gradient(270deg, rgba(0, 0, 0, 0.60) 33.85%, rgba(0, 0, 0, 0.10) 100%), url('../public/images/categories/category-right.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                     @apply flex flex-col justify-center pr-7 md:pr-12  rounded-2xl h-[142px] md:h-[248px]
+
+        }
+        .category-banner__item2{
+                 
+                  background:linear-gradient(270deg, rgba(0, 0, 0, 0.60) 33.85%, rgba(0, 0, 0, 0.10) 100%), url('../public/images/categories/category-left.jpg');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                    @apply flex flex-col justify-center pr-7 md:pr-12  rounded-2xl h-[142px] md:h-[248px]
+
+        }
+     
+        .swiper-button-prev-custom,
+        .swiper-button-next-custom{
+                @apply flex-center w-9 h-9 md:w-10 md:h-10 dark:bg-zinc-700 dark:text-white text-zinc-700 bg-white rounded-full shadow-normal hover:bg-gray-300 dark:hover:bg-white dark:hover:text-zinc-700 transition-all
+        }
       
    
 }
